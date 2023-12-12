@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spain</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --main-color:#d1cebd;
+    --second-color:#f6eedf;
+    --button-color:#d63447;
+    --butn-color:#f36969;
+   --third-color:#f57b51;
+    
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding:100px;
+}
+body{
+    color: #333;;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+        #home {
+            background:url('project pic/pexels-luis-quintero-1500599.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+            border-left: 4px solid #333;
+            margin: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #666;
+        }
+        .title2 {
+            font-size: xx-large;
+            text-align: left;
+            border-left: 4px solid #ffffff;
+            margin: 0;
+            padding: 20px;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        .mid1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
+            margin: 5px;
+        }
+
+        .art {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        .music {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.603);
+            margin: 5px;
+        }
+        .atrc{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.61);
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .atrc img, .music img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #video-background {
+            width: 100%;
+            height: 100%;
+        }
+        .food{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            
+        }
+        .food div {
+            padding: 5px;
+            border-radius: 50px;
+            box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.685);
+        }
+        .food img{
+            width: 100%;
+            border-radius: 50px;
+            height: 350px;
+            
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #175008;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+        .houses{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+        gap: 10px;
+        place-items: center;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.671);
+        }
+        .houses img{
+            width: 100%;
+        }
+        #video-background-foot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Place the video behind other content */
+        filter: brightness(70%) contrast(120%);
+        }
+
+        .foot {
+        position: relative; /* Ensure the container is positioned relative to accommodate absolute positioning */
+        height: 600px;
+        }
+        .ball{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .social-icons{
+            font-size: 2em;
+            margin: 10px;
+            color: #333;
+            cursor: pointer;
+        }
+        .social-icons i{
+            margin: 20px;
+        }
+        
+
+        footer {
+    background-color: var(--button-color);
+    display: grid;
+    
+  
+}
+/* articles*/
+article {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff; /* Set text color to white for better readability */
+        }
+
+        article:hover {
+            transform: scale(1.03);
+            
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #fffb00;
+            font-weight: bolder;
+        }
+
+        .author {
+            color: rgba(255, 255, 255, 0.8);
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+         /* header*/
+         header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    height: 70px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
+    
+}
+header .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    position: relative;
+}
+@media (max-width : 768px) {
+    header .container {
+        background: white;
+        padding-left: 10px;
+    }
+}
+
+.logo{
+    position: relative;
+    top: 5px;
+    color: var(--button-color);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width : 768px) {
+    .logo {
+    color: var(--button-color);
+    font-size: 15px;
+    height: 20%;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: nowrap;
+    }
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    gap: 20px;
+}
+@media (max-width : 768px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 100%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+@media (max-width : 410px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 80%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: larger;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.dropdown .homedrop a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.dropdown .homedrop {
+    display: none;
+    position: absolute;
+    background-color:var(--butn-color);
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+
+}
+.dropdown:hover .homedrop{
+    display: block;
+}
+.dropdown:hover button{
+    color: white;
+    background-color: var(--button-color);
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+}
+.homedrop a:hover{
+    background-color: var(--button-color);
+}
+
+.dropdown4 button{
+    background-color: var(--button-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.dropdown4:hover button{
+    border: 2px solid var(--button-color);
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgb(71, 19, 19);
+}
+@media (max-width : 768px) {
+    .dropdown4 button {
+    font-size: 9px;
+    font-weight: bold;
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+:root{
+    --button-color:#ED2B2A;
+    --butn-color:#f36969;
+    --background-color:#e3fff8;
+}
+/* header done */
+/* footer*/
+footer{
+    background-color: #99570077;
+    padding: 0;
+    margin: 0;
+}
+footer .logo {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-col .links li a:hover {
+  color: #000000;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #ffffff;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 2px solid white ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #e21a1a;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #004d11;
+  font-size: xx-large;
+}
+
+.footer-col .icons i:hover  {
+  color: #1505f3;
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <section class="logo">
+                <a href="" class="logo">WORLD CUP 2030</a>
+            </section>
+            <section class="navbar">
+                <div class="dropdown">
+                    <a href="index.html"><button>HOME</button></a>
+                </div>
+                <div class="dropdown">
+                    <a href="#host"><button >HOST</button></a>
+                    <div class="homedrop">
+                        <a href="morocco.html">MOROCCO</a> 
+                        <a href="spain.html">SPAIN</a>
+                        <a href="portugal.html">PORTUGAL</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="history.html"><button>HISTORY</button></a>
+                </div>
+                <div class="dropdown4">
+                    <div class="contactdrop">
+                        <a href="login.html"><button>LOG IN</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <div id="home">
+        <h1 style="font-size: 50px;color: rgb(218, 149, 0);">SPAIN</h1>
+        <section>
+            <h2 style="color: #ffffff;">Welcome to Our World</h2>
+            <p style="color: #ffffff;">Discover the beauty and richness of our fictional place and culture.</p>
+        </section>
+    </div>
+    <br><br>
+    <div class="art">
+        <div class="atrc">
+            <div>
+                <img src="project pic/230928105523-01-spanish-foods-paella.jpg" alt="">
+            </div>
+            <div>
+                <h3>Our FOOD</h3>
+                <p>Spanish cuisine (Spanish: Cocina española) consists of the traditions and practices of Spanish cooking. It features considerable regional diversity, with important differences between the traditions of each part of Spain (see #Regional cuisines).
+                    Olive oil (of which Spain is the world's largest producer) is extensively used in Spanish cuisine. It forms the base of many vegetable sauces (known in Spanish as sofritos).Herbs most commonly used include parsley, oregano, rosemary and t
+                    hyme.The use of garlic has been noted as common in Spanish cooking.The most used meats in Spanish cuisine include chicken, pork, lamb and veal.Fish and seafood 
+                    are also consumed on a regular basis. Tapas and pinchos are snacks and appetizers commonly served in bars and cafes.</p>
+            </div>
+        </div>
+        <div class="atrc">
+            <div>
+                <img src="project pic/pexels-pixabay-372499.jpg" alt="">
+            </div>
+            <div>
+                <h3>Culture</h3>
+                <p>The earliest cultural manifestations of any significance
+                     are prehistoric. In the Palaeolithic Period, around 15,000 B.C.,
+                      a Franco-Cantabrian culture stretched from the north of Spain and
+                       Europe to Asia. This culture left behind animal figures painted in
+                        several caves for magical and religious purposes; the masterpiece from this period can be found in 
+                    the main chamber of the cave at Altamira, which has been described as the "Sistine Chapel" of cave art.</p>
+            </div>
+        </div>
+        <div class="atrc">
+            <div>
+                <img src="project pic/connor-coyne-OgqWLzWRSaI-unsplash.jpg" alt="">
+            </div>
+            <div>
+                <h3>Football</h3>
+                <p> It brings people together, all over the world,
+                     to celebrate the beautiful game. It represents the commitment of those who live football 
+                     –be they players, coaches or fans – to shape our communities and society.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h1>Historic Places</h1>
+    </div>
+    <div class="houses"> 
+        <div>
+            <img style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)" src="project pic/Alhambra-788x537.webp" alt="">
+        </div>
+        <div>
+            <p style="color: rgb(0, 0, 0);font-weight: bolder;font-size: large;text-align: center;">
+                Among the legacy left by Celts, Romans, Arabs and Catholic Monarchs are spectacular 
+                sites such as the Cordoba Roman Bridge, Santa Eulalia Basilica and El Escorial. Other
+                 popular sites tend to include Belchite, Lugo Roman Walls and the weirdly wonderful La
+                 Sagrada Familia, found in the heart of Catalonia – Barcelona.
+                The Romans laid the foundations for modern Spanish culture and identity. Spain was even the birthplace
+                of important Roman emperors such as Trajan, Hadrian or Theodosius I.
+            </p>
+        </div>
+        <div>
+            <img style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)" src="project pic/Cordoba-Roman-Bridge_shutterstock-788x537.webp" alt="">
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h1>Traditional Cuisine</h1>
+    </div>
+    <div class="food">
+        <div>
+            <img src="project pic/paella-398968_1280.jpg" alt="">
+            <h3 style="color: #ff3300;"> Paella</h3>
+            <button><a href="https://www.savoredjourneys.com/foods-you-must-eat-in-spain/" style="color: inherit; text-decoration: none;">see more</a></button>
+        </div>
+        <div>
+            <img src="project pic/potatas-bravas.jpg" alt="">
+            <h3 style="color: #ff3300;">Patatas Bravas</h3>
+            <button><a href="https://www.savoredjourneys.com/foods-you-must-eat-in-spain/" style="color: inherit; text-decoration: none;">see more</a></button>
+        </div>
+        <div>
+            <img src="project pic/churros-spain.jpg" alt="">
+            <h3 style="color: #ff3300;">Churros</h3>
+            <button><a href="https://www.savoredjourneys.com/foods-you-must-eat-in-spain/" style="color: inherit; text-decoration: none;">see more</a></button>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h1>Unique Music and Dance</h1>
+    </div>
+    <div class="music">
+        <div>
+            <video id="video-background" autoplay muted loop>
+                <source src="project pic/543.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            
+            <p style="font-size: 20px;color: 	#470a0a;">
+                Undoubtedly one of the most famous cultural
+                 exports from Spain, flamenco is in fact so much
+                  more than just a dance: it’s an art form recognised 
+                  as part of the Masterpieces of the Oral and Intangible
+                   Heritage of Humanity by UNESCO. It emerged among the
+                 gypsy communities of Andalusia and is performed by a mixture
+                  of singing, guitar playing, dancing, finger snapping and hand clapping.
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="mid1">
+        <div>
+            <section id="about">
+                <h2 style="color: #004d11;">Cultural Heritage</h2>
+                <p> Spain has a rich cultural heritage, including flamenco music and dance, traditional festivals like La Tomatina and Running of the Bulls, and iconic art and architecture.
+                     The country is home to renowned artists like Pablo Picasso and Salvador Dalí.</p>
+            </section>
+        
+            <section id="gallery">
+                <h2 style="color: #004d11;">Historical Landmarks</h2>
+                <p> Spain boasts numerous historical landmarks, including the Alhambra in Granada, the Sagrada Família in Barcelona, and the historic city of Toledo.
+                     The country has a deep historical connection to the Roman Empire, Moorish rule, and the Reconquista.</p>
+            </section>
+        
+            <section id="contact">
+                <h2 style="color: #004d11;">Festivals and Celebrations</h2>
+                <p>Spain is famous for its lively festivals and celebrations, including Semana Santa (Holy Week), La Tomatina, and various colorful and vibrant local festivals.</p>
+            </section>
+        </div>
+        <video id="video-background" autoplay muted loop playsinlin<h1></h1>e>
+            <source src="project pic/1 Minute in Spain.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br><br>
+    <div>
+        <div>
+            <h1>Famous Locations</h1>
+        </div>
+        <div>
+            <div>
+                <article style="background-image: url('project pic/10.webp');">
+                    <div>
+                        <h2>Seville Cathedral</h2>
+                        <p class="author">Best place for romance </p>
+                        <p style="background-color: #57545486;">
+                            Seville Cathedral is the third largest cathedral in the world,
+                             a World Heritage site and the resting place of colonial explorer,
+                              Christopher Columbus.
+                            An impressive gothic structure and, with a total area
+                            of 11,520 square metres, Seville Cathedral is
+                             only beaten in size by London’s St Paul’s Cathedral and Rome’s St. 
+                             Peter’s. Some even argue that it is actually the largest when comparing volume
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/11.webp');">
+                    <div>
+                        <h2>Santa Eulalia Basilica - Merida</h2>
+                        <p class="author">Best place for blockbuster movie scenes</p>
+                        <p>
+                            Santa Eulalia Basilica in Merida is an Ancient Roman church the
+                             remains of which lie under the present 18th century church.
+                            The namesake of Santa Eulalia Basilica was a 13 year-old girl 
+                            who was martyred upon being burnt at the stake during the Christian
+                             persecutions under Emperor Diocletian. According to legend, she is buried nearby. 
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/12.webp');">
+                    <div>
+                        <h2>El Escorial</h2>
+                        <p class="author">Best place for chill beach vibes </p>
+                        <p>
+                            Intended to mark the celebration of Spain’s victory over the French in the Battle of St Quentin,
+                             El Escorial was constructed between 1563 and 1567 by Juan Bautista de Toledo,
+                             a Spanish architect who had spent much of his career in Rome. It would go on to
+                              serve as the king’s palace and the seat of his empire.
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/13.webp');">
+                    <div>
+                        <h2>El Miguelete</h2>
+                        <p class="author">Best place for getting away from it all </p>
+                        <p style="background-color: #c7a9249a;">
+                            El Miguelete (The Micalet Tower) is an iconic gothic bell tower built in 1381
+                             and joined onto Valencia Cathedral in the 15th century.
+                             El Miguelete means ‘Little Michael’ and comes from the name
+                              of its biggest bell made in 1532 weighing over 10 tons.   
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <a href="" class="logo">WORLD CUP 2030</a>
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>HOME</h4>
+            <ul class="links">
+              <li><a href="">NEWS</a></li>
+              <li><a href="">HISTORY</a></li>
+              <li><a href="">HOST</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>HOST</h4>
+            <ul class="links">
+              <li><a href="">MOROCCO</a></li>
+              <li><a href="">SPAIN</a></li>
+              <li><a href="">PORTUGAL</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>HISTORY</h4>
+            <ul class="links">
+              <li><a href="">top scorer</a></li>
+              <li><a href="">most participate</a></li>
+              <li><a href="">country apparences</a></li>
+              <li><a href="">player win WC</a></li>
+              <li><a href="">the most country win</a></li>
+              <li><a href="">most tournament appeared</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe for a weekly dose of world cup 2030 news, updates.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

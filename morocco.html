@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore the Lion's Roar in Morocco</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* header*/
+        header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    height: 70px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
+    
+}
+header .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    position: relative;
+}
+@media (max-width : 768px) {
+    header .container {
+        background: white;
+        padding-left: 10px;
+    }
+}
+
+.logo{
+    position: relative;
+    top: 5px;
+    color: var(--button-color);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width : 768px) {
+    .logo {
+    color: var(--button-color);
+    font-size: 15px;
+    height: 20%;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: nowrap;
+    }
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    gap: 20px;
+}
+@media (max-width : 768px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 100%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+@media (max-width : 410px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 80%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: larger;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.dropdown .homedrop a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.dropdown .homedrop {
+    display: none;
+    position: absolute;
+    background-color:var(--butn-color);
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+
+}
+.dropdown:hover .homedrop{
+    display: block;
+}
+.dropdown:hover button{
+    color: white;
+    background-color: var(--button-color);
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+}
+.homedrop a:hover{
+    background-color: var(--button-color);
+}
+
+.dropdown4 button{
+    background-color: var(--button-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.dropdown4:hover button{
+    border: 2px solid var(--button-color);
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgb(71, 19, 19);
+}
+@media (max-width : 768px) {
+    .dropdown4 button {
+    font-size: 9px;
+    font-weight: bold;
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --main-color:#d1cebd;
+    --second-color:#f6eedf;
+    --button-color:#d63447;
+    --butn-color:#f36969;
+   --third-color:#f57b51;
+    
+}
+/* header done */
+        #home {
+            background:url('project pic/pexels-idriss-meliani-2971385.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+            border-left: 4px solid #333;
+            margin: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #666;
+        }
+        .title2 {
+            font-size: xx-large;
+            text-align: left;
+            border-left: 4px solid #ffffff;
+            margin: 0;
+            padding: 20px;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        .mid1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.555) ;
+            margin: 5px;
+        }
+
+        .art {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        .music {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            box-shadow: 0 10px 15px rgb(0, 0, 0,0,6);
+            margin: 5px;
+        }
+        .atrc{
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.647);
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .atrc img, .music img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+
+        #video-background {
+            width: 100%;
+            height: 100%;
+        }
+        .food{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            
+        }
+        .food div {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 50px;
+            box-shadow:  5px 5px 10px;
+        }
+        .food img{
+            width: 100%;
+            border-radius: 50px;
+            height: 350px;
+            
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--button-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+        .houses{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+        gap: 10px;
+        place-items: center;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.637);
+        }
+        .houses img{
+            height: 80%;
+            width: 100%;
+        }
+        #video-background-foot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Place the video behind other content */
+        filter: brightness(70%) contrast(120%);
+        }
+
+        .foot {
+        position: relative; /* Ensure the container is positioned relative to accommodate absolute positioning */
+        height: 600px;
+        }
+        .ball{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .social-icons{
+            font-size: 2em;
+            margin: 10px;
+            color: #333;
+            cursor: pointer;
+        }
+        .social-icons i{
+            margin: 20px;
+        }
+        
+
+        footer {
+    background-color: var(--button-color);
+    display: grid;
+    
+  
+}
+/* articles*/
+article {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff; /* Set text color to white for better readability */
+        }
+
+        article:hover {
+            transform: scale(1.03);
+            
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #fffb00;
+            font-weight: bolder;
+        }
+
+        .author {
+            color: rgba(255, 255, 255, 0.8);
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+/* footer*/
+footer{
+    background-color: #40832f77;
+    padding: 0;
+    margin: 0;
+}
+footer .logo {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-col .links li a:hover {
+  color: #000000;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #ffffff;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 2px solid white ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #e21a1a;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #004d11;
+  font-size: xx-large;
+}
+
+.footer-col .icons i:hover  {
+  color: #1505f3;
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="logo">
+                <a href="" class="logo" style="text-decoration: none;">WORLD CUP 2030</a>
+            </section>
+            <section class="navbar">
+                <div class="dropdown">
+                    <a href="index.html"><button>HOME</button></a>
+                </div>
+                <div class="dropdown">
+                    <a href="#host"><button >HOST</button></a>
+                    <div class="homedrop">
+                        <a href="morocco.html">MOROCCO</a> 
+                        <a href="spain.html">SPAIN</a>
+                        <a href="portugal.html">PORTUGAL</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="history.html"><button>HISTORY</button></a>
+                </div>
+                <div class="dropdown4">
+                    <div class="contactdrop">
+                        <a href="login.html"><button>LOG IN</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    
+    <div style="padding-top: 100px;">
+        <h1 class="title">"Legacy is not just what we leave behind, but the echoes of our impact that resonate through time, shaping the future with the essence of our journey."</h1>
+    <br><br>
+    <div id="home">
+        <h1 style="font-size: 50px;color: rgb(255, 52, 52);">MOROCCO</h1>
+        <section>
+            <h2 style="color: #ffffff;">Welcome to Our World</h2>
+            <p style="color: #ffffff;">Discover the beauty and richness of our fictional place and culture.</p>
+        </section>
+    </div>
+    </div>
+    <br><br>
+    <div class="mid1">
+        <div>
+            <section id="about">
+                <h2 style="color: #3a9679;">Rich Cultural Heritage</h2>
+                <p> Morocco is renowned for its vibrant and diverse cultural heritage, blending Arab, Tamazight, and French influences.</p>
+            </section>
+        
+            <section id="gallery">
+                <h2 style="color: var(--button-color);">Exquisite Architecture</h2>
+                <p>The country boasts stunning architecture, with the iconic mosques, palaces, and the ancient city of Marrakech standing as prime examples.</p>
+            </section>
+        
+            <section id="contact">
+                <h2 style="color: #3a9679;">Majestic Landscapes</h2>
+                <p>From the Sahara Desert to the Atlas Mountains, Morocco is celebrated for its diverse and breathtaking landscapes that attract nature enthusiasts and adventurers.</p>
+            </section>
+        </div>
+        <video id="video-background" autoplay muted loop playsinline>
+            <source src="project pic/dsfdsf.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br><br>
+    <div class="art">
+        <div class="atrc">
+            <div>
+                <img src="project pic/annie-spratt-_V4v7BbG338-unsplash.jpg" alt="">
+            </div>
+            <div>
+                <h3 style="color: var(--button-color);">Discover Our FOOD</h3>
+                <p>Moroccan food is well-known around the world for its rich flavors
+                     with spices and herbs as well as slow-cooked meats and delicious couscous.
+                     There are many interesting dishes that you should try when visiting Morocco,
+                      and here are some of my favorites!</p>
+            </div>
+        </div>
+        <div class="atrc" style="background-color: var(--button-color);">
+            <div>
+                <img src="project pic/florian-bernhardt-bnXUaEq9xYQ-unsplash.jpg" alt="">
+            </div>
+            <div>
+                <h3 style="color: var(--second-color);">Cultural diversity</h3>
+                <p>As you travel across Morocco, you will discover it is a land of art and history,
+                     the country alone has hosted Berbers, Phoenicians, Arabs, South (Sub-Saharan African)
+                      and North (Romans, Vandals, Spanish-Andalusians, both Muslimand Jewish): however,
+                       the majority of Morocco's population is Berber and Arab by identity,
+                     and at least a third of the population speaks the Amazigh language.</p>
+            </div>
+        </div>
+        <div class="atrc">
+            <div>
+                <img src="project pic/daniel-norin-lBhhnhndpE0-unsplash.jpg" alt="">
+            </div>
+            <div>
+                <h3 style="color: var(--button-color);">Football Unites the World</h3>
+                <p> It brings people together, all over the world,
+                     to celebrate the beautiful game. It represents the commitment of those who live football 
+                     –be they players, coaches or fans – to shape our communities and society.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h1>Football Unites the World</h1>
+    <div>
+        <div class="foot">
+            <div>
+                <video id="video-background-foot" autoplay muted loop>
+                    <source src="project pic/World CUP 2022 - THE MOROCCAN DREAM ( Goosebumps effect ) @fifa - Trim.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <p class="title2">"Like the vibrant tapestry of Morocco's landscapes,
+                     the football team weaves a diverse mosaic of skill, passion,
+                     and unity on the pitch, showcasing the beauty of 
+                     the game through the colors of determination and teamwork."
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="ball">
+            <div>
+                <img style="width: 90%;" src="project pic/Royal_Moroccan_Football_Federation_logo.svg.png" alt="">
+            </div>
+            <div>
+                <h1 style="font-size: 100px;color: var(--button-color);">Atlas Lions</h1>
+                <p style="font-size: 30px;color: rgba(0, 0, 0, 0.815);">Football is the most popular sport in Morocco.
+                     The governing body of Moroccan football is the Royal
+                      Moroccan Football Federation. Football in Morocco has
+                       witnessed significant development in recent years, with 
+                       increased international fame. Morocco hosted the 2013 FIFA 
+                       Club World Cup, in which Moroccan team Raja reached the final,
+                        finishing runners-up to German Bundesliga heavyweights Bayern Munich.
+                     The most popular clubs in the country are Raja Casablanca, Wydad Casablanca and ASFAR.</p>
+                <div class="social-icons">
+                    <a href="https://site.frmf.ma/" style="color: inherit; text-decoration: none; font-size:40px;"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.instagram.com/equipedumaroc/?hl=en" style="color: inherit; text-decoration: none;font-size:40px;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/ENMAROCofficiel/?_rdc=1&_rdr" style="color:inherit inherit; text-decoration: none;font-size:40px;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/EnMaroc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="color: inherit; text-decoration: none;font-size:40px;"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div style="text-align: center; color: var(--button-color);">
+            <h1>Unique Music and Dance</h1>
+        </div>
+        <div class="music" style="box-shadow: 0 10px 15px rgba(0, 0, 0, 0.692); border-radius: 20px;">
+            <div>
+                <video id="video-background" autoplay muted loop>
+                    <source src="project pic/123.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                
+                <p style="font-size: 20px;padding-left: 10px; ">
+                    Traditional dance and music have played an important role
+                    in every culture Including Moroccan culture. Such music a
+                    nd dance would give joy to every special occasion. For e
+                    very generation, it’s a very important cultural traditio
+                    n for Amazigh people in Morocco as well as in the whole o
+                    f North Africa. Through this article, we travel through Mo
+                    rocco’s music history to introduce its traditional dances 
+                    and art, as well as its musical instruments.
+                </p>
+                <ul>
+                    <li><h2 style="color: var(--button-color);">Andalusian Music: Al-ALA</h2></li>
+                    <li><h2 style="color: var(--button-color);">Malhun Music</h2></li>
+                    <li><h2 style="color: var(--button-color);">Gnawa Music</h2></li>
+                    <li><h2 style="color: var(--button-color);">Chaabi Music</h2></li>
+                    <li><h2 style="color: var(--button-color);">Reggada Music</h2></li>
+                    <li><h2 style="color: var(--button-color);">Ahwach</h2></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div style="text-align: center;color: var(--button-color);">
+            <h1>Traditional Cuisine</h1>
+        </div>
+        <div class="food">
+            <div>
+                <img src="project pic/tajine-2472361_1280.jpg" alt="">
+                <h3 style="color: var(--button-color);">Tagine</h3>
+                <button><a href="https://localadventurer.com/moroccan-foods-you-must-try-in-morocco/" style="color: inherit; text-decoration: none;">see more</a></button>
+            </div>
+            <div style="background-color: var(--button-color);">
+                <img src="project pic/R.jpeg" alt="">
+                <h3 style="color: white;">Tanjia</h3>
+                <button style="background-color: white;"><a href="https://localadventurer.com/moroccan-foods-you-must-try-in-morocco/" style="color: black; text-decoration: none; ">see more</a></button>
+            </div>
+            <div>
+                <img src="project pic/louis-hansel-k2ZCm7LCj8E-unsplash.jpg" alt="">
+                <h3 style="color: var(--button-color);">Couscous</h3>
+                <button><a href="https://localadventurer.com/moroccan-foods-you-must-try-in-morocco/" style="color: inherit; text-decoration: none;">see more</a></button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div style="text-align: center;color: var(--button-color);"">
+            <h1>Historic Medinas</h1>
+        </div>
+        <div class="houses"> 
+            <div>
+                <img style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)" src="project pic/Visit-Marrakech-medina-1024x684.jpg" alt="">
+            </div>
+            <div>
+                <p style="color: rgb(0, 0, 0);font-weight: bolder;font-size: large;text-align: center;">Despite its Modern transformation, Morocco has never lost sight of its deep-rooted traditions. The magical Medina is on of the traditional Moroccan culture embedded in people’s daily life.
+                    Typically walled, the traditional Medina invites you to explore its deepest treasures while meandering its narrow streets. Artisan shops, fountains, mosques …Hundreds of people live and work inside of its ochre walls, passing their know-how on to other generations.
+                    In Fez, Tetouan, Essaouira and Marrakech, these car-free and most best conserved historic towns have quickly become World Heritage. Wheter it’s located in an imperial city, a coastal city, or in mountains, Medinas will take you back in history.
+                </p>
+            </div>
+            <div>
+                <img style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)" src="project pic/tannery-fez-medina.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1>Famous Locations</h1>
+        </div>
+        <div>
+            <div>
+                <article style="background-image: url('project pic/iStock_41519458_morocco_djemaa_el_fna_marrakesh_letterbox.jpg');">
+                    <div>
+                        <h2>Marrakesh</h2>
+                        <p class="author">Best place for romance </p>
+                        <p style="background-color: #57545486;">
+                            The 'pink city' is one of Morocco's must-sees – all your senses come
+                             to life here, and there are plenty of things to do in Marrakesh.
+                              Soak up the city's charm with the rosy hues of the medina wall
+                               at sunset and the heavy scent of citrus trees in season. Weave 
+                               your way past the horse carriages into Djemaa el Fna, packed with
+                                performers and street food vendors. Explore the lantern-lit alleys
+                                 of the medina and the walled gardens of Jardin Majorelle,
+                             as well as flamboyant historic palaces and a flourishing art scene in the Ville Nouvelle. 
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/Home-ABH-01B.jpg');">
+                    <div>
+                        <h2>Aït Ben Haddou</h2>
+                        <p class="author">Best place for blockbuster movie scenes</p>
+                        <p>
+                            Travel on the former trading route from Marrakesh to the Sahara and
+                             you’ll reach sun-scorched Ouarzazate. The region is home to
+                              majestic Aït Ben Haddou, an 11th-century mudbrick ksar (fortified village)
+                               that's one of Morocco's most striking, well-preserved ancient sites.
+                             Still inhabited and now protected by Unesco, it was made famous in the TV show Game of Thrones. 
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/63a0501cad437c45a4fb0740_header.png');">
+                    <div>
+                        <h2>Taghazout Bay</h2>
+                        <p class="author">Best place for chill beach vibes </p>
+                        <p>
+                            Even if you're not into surfing, Taghazout Bay, with its
+                             5km sandy beach, offers year-round summer vacation vibes and an excellent choice
+                              of accommodations ranging from five-star beach
+                             resorts to bohemian homestays, making it one of the
+                              best places in Morocco for a beach vacation.
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/86.jpg');">
+                    <div>
+                        <h2>Sahara Desert</h2>
+                        <p class="author">Best place for getting away from it all </p>
+                        <p style="background-color: #c7a9249a;">Visiting the Moroccan Sahara is an opportunity to disconnect, empty your mind and enjoy being in the middle of nowhere. This stark and barren environment comes to 
+                            life with a good guide, especially
+                             at night when the night sky free of light pollution fills with stars.   
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <a href="" class="logo">WORLD CUP 2030</a>
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>HOME</h4>
+            <ul class="links">
+              <li><a href="">NEWS</a></li>
+              <li><a href="">HISTORY</a></li>
+              <li><a href="">HOST</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>HOST</h4>
+            <ul class="links">
+              <li><a href="">MOROCCO</a></li>
+              <li><a href="">SPAIN</a></li>
+              <li><a href="">PORTUGAL</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>HISTORY</h4>
+            <ul class="links">
+              <li><a href="">top scorer</a></li>
+              <li><a href="">most participate</a></li>
+              <li><a href="">country apparences</a></li>
+              <li><a href="">player win WC</a></li>
+              <li><a href="">the most country win</a></li>
+              <li><a href="">most tournament appeared</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe for a weekly dose of world cup 2030 news, updates.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

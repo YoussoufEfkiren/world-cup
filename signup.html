@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f8ff; /* Light Blue */
+            background-image: url('project pic/pexels-nicolas-postiglioni-943510.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.493);
+    height: 70px;
+    
+    
+}
+header .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    position: relative;
+}
+@media (max-width : 768px) {
+    header .container {
+        background: white;
+        padding-left: 10px;
+    }
+}
+
+.logo{
+    position: relative;
+    top: 5px;
+    color: var(--button-color);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width : 768px) {
+    .logo {
+    color: var(--button-color);
+    font-size: 15px;
+    height: 20%;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: nowrap;
+    }
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    gap: 20px;
+}
+@media (max-width : 768px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 100%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+@media (max-width : 410px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 80%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: larger;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.dropdown .homedrop a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.dropdown .homedrop {
+    display: none;
+    position: absolute;
+    background-color:var(--butn-color);
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+
+}
+.dropdown:hover .homedrop{
+    display: block;
+}
+.dropdown:hover button{
+    color: white;
+    background-color: var(--button-color);
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+}
+.homedrop a:hover{
+    background-color: var(--button-color);
+}
+
+.dropdown4 button{
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.dropdown4:hover button{
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgb(71, 19, 19);
+}
+@media (max-width : 768px) {
+    .dropdown4 button {
+    font-size: 9px;
+    font-weight: bold;
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+:root{
+    --main-color:#ED2B2A;
+    --second-color:#F15A59;
+    --button-color:#016A70;
+    --butn-color:#7ED7C1;
+    --background-color:#e3fff8;
+}
+        .content{
+            display: flex;
+            place-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .signup-container {
+            background-color: rgba(255, 255, 255, 0.576);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 800px;
+            
+            margin-top: 150px;
+        }
+        
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #4caf50; /* Green */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="logo">
+                <a href="" class="logo">WORLD CUP 2030</a>
+            </section>
+            <section class="navbar">
+                <div class="dropdown">
+                    <a href="index.html"><button>HOME</button></a>
+                </div>
+                <div class="dropdown">
+                    <a href="#host"><button >HOST</button></a>
+                    <div class="homedrop">
+                        <a href="morocco.html">MOROCCO</a> 
+                        <a href="spain.html">SPAIN</a>
+                        <a href="portugal.html">PORTUGAL</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="history.html"><button>HISTORY</button></a>
+                </div>
+                <div class="dropdown4">
+                    <div class="contactdrop">
+                        <a href="login.html"><button>LOG IN</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="content">
+        <div class="signup-container">
+            <h1>Sign Up</h1>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+    
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button class="btn" type="submit">Sign Up</button>
+            </form>
+    
+            <div class="login-link">
+                Already have an account? <a href="login.html">Log In</a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

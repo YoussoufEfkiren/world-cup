@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTUGAL</title>
+</head>
+<style>
+    *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding:100px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+    body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        #home {
+            background:url('project pic/PORTUGAL.webp');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+            border-left: 4px solid #333;
+            margin: 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #666;
+        }
+        .title2 {
+            font-size: xx-large;
+            text-align: left;
+            border-left: 4px solid #ffffff;
+            margin: 0;
+            padding: 20px;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        .mid1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.521);
+            margin: 5px;
+        }
+
+        .art {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        .music {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.582);
+            margin: 5px;
+        }
+        .atrc{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.719);
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .atrc img, .music img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #video-background {
+            height: 100%;
+            width: 100%;
+        }
+        .food{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            
+        }
+        .food div {
+            padding: 5px;
+            border-radius: 50px;
+            box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.623);
+        }
+        .food img{
+            width: 100%;
+            border-radius: 50px;
+            height: 350px;
+            
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #175008;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+        .houses{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+        gap: 10px;
+        place-items: center;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 0 0 20px yellow;
+        }
+        .houses img{
+            width: 100%;
+        }
+        #video-background-foot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Place the video behind other content */
+        filter: brightness(70%) contrast(120%);
+        }
+
+        .foot {
+        position: relative; /* Ensure the container is positioned relative to accommodate absolute positioning */
+        height: 600px;
+        }
+        .ball{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .social-icons{
+            font-size: 2em;
+            margin: 10px;
+            color: #333;
+            cursor: pointer;
+        }
+        .social-icons i{
+            margin: 20px;
+        }
+        
+
+        footer {
+    background-color: var(--button-color);
+    display: grid;
+    
+  
+}
+/* articles*/
+article {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff; /* Set text color to white for better readability */
+        }
+
+        article:hover {
+            transform: scale(1.03);
+            
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #91ff51;
+            font-weight: bolder;
+        }
+
+        .author {
+            color: rgba(255, 255, 255, 0.8);
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+         /* header*/
+         header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    height: 70px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
+    
+}
+header .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    position: relative;
+}
+@media (max-width : 768px) {
+    header .container {
+        background: white;
+        padding-left: 10px;
+    }
+}
+
+.logo{
+    position: relative;
+    top: 5px;
+    color: var(--button-color);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width : 768px) {
+    .logo {
+    color: var(--button-color);
+    font-size: 15px;
+    height: 20%;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: nowrap;
+    }
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    gap: 20px;
+}
+@media (max-width : 768px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 100%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+@media (max-width : 410px) {
+    .navbar {
+        margin: auto;
+        color: var(--button-color);
+        font-size: 10px;
+        width: 80%;
+        margin: auto;
+        height: 70%;
+        gap: 0;
+   
+    }
+    
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: larger;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.dropdown .homedrop a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.dropdown .homedrop {
+    display: none;
+    position: absolute;
+    background-color:var(--butn-color);
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+
+}
+.dropdown:hover .homedrop{
+    display: block;
+}
+.dropdown:hover button{
+    color: white;
+    background-color: var(--button-color);
+    box-shadow: 10px 10px 15px rgb(71, 19, 19);
+}
+.homedrop a:hover{
+    background-color: var(--button-color);
+}
+
+.dropdown4 button{
+    background-color: var(--button-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.dropdown4:hover button{
+    border: 2px solid var(--button-color);
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgb(71, 19, 19);
+}
+@media (max-width : 768px) {
+    .dropdown4 button {
+    font-size: 9px;
+    font-weight: bold;
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --main-color:#d1cebd;
+    --second-color:#f6eedf;
+    --button-color:#d63447;
+    --butn-color:#f36969;
+   --third-color:#f57b51;
+    
+}
+/* header done */
+/* footer*/
+footer{
+    background-color: #8c960077;
+    padding: 0;
+    margin: 0;
+}
+footer .logo {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-col .links li a:hover {
+  color: #000000;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #ffffff;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 2px solid white ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #e21a1a;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #004d11;
+  font-size: xx-large;
+}
+
+.footer-col .icons i:hover  {
+  color: #1505f3;
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <section class="logo">
+                <a href="" class="logo">WORLD CUP 2030</a>
+            </section>
+            <section class="navbar">
+                <div class="dropdown">
+                    <a href="index.html"><button>HOME</button></a>
+                </div>
+                <div class="dropdown">
+                    <a href="#host"><button >HOST</button></a>
+                    <div class="homedrop">
+                        <a href="morocco.html">MOROCCO</a> 
+                        <a href="spain.html">SPAIN</a>
+                        <a href="portugal.html">PORTUGAL</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="history.html"><button>HISTORY</button></a>
+                </div>
+                <div class="dropdown4">
+                    <div class="contactdrop">
+                        <a href="login.html"><button>LOG IN</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <div id="home">
+        <h1 style="font-size: 50px;color: rgb(255, 253, 136);">PORTUGAL</h1>
+        <section>
+            <h2 style="color: #ffffff;">Welcome to Our World</h2>
+            <p style="color: #ffffff;">Discover the beauty and richness of our fictional place and culture.</p>
+        </section>
+    </div>
+    <br><br>
+    <div class="art">
+        <div class="atrc">
+            <div>
+                <img src="project pic/1111.webp" alt="">
+            </div>
+            <div>
+                <h3>FOOD</h3>
+                <p>Moroccan food is well-known around the world for its rich flavors
+                     with spices and herbs as well as slow-cooked meats and delicious couscous.
+                     There are many interesting dishes that you should try when visiting Morocco,
+                      and here are some of my favorites!</p>
+            </div>
+        </div>
+        <div class="atrc">
+            <div>
+                <img src="project pic/1222.jpg" alt="">
+            </div>
+            <div>
+                <h3>Culture</h3>
+                <p>As you travel across Morocco, you will discover it is a land of art and history,
+                     the country alone has hosted Berbers, Phoenicians, Arabs, South (Sub-Saharan African)
+                      and North (Romans, Vandals, Spanish-Andalusians, both Muslimand Jewish): however,
+                       the majority of Morocco's population is Berber and Arab by identity,
+                     and at least a third of the population speaks the Amazigh language.</p>
+            </div>
+        </div>
+        <div class="atrc">
+            <div>
+                <img src="project pic/0000.webp" alt="">
+            </div>
+            <div>
+                <h3>Football Unites the World</h3>
+                <p> It brings people together, all over the world,
+                     to celebrate the beautiful game. It represents the commitment of those who live football 
+                     –be they players, coaches or fans – to shape our communities and society.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="mid1">
+        <div>
+            <section id="about">
+                <h2 style="color: #747e19;">Portuguese Explorers</h2>
+                <p> 
+                    Portugal has a rich maritime history, and its explorers,
+                     such as Vasco da Gama and Ferdinand Magellan, played crucial roles in the Age of Discovery
+                     . The country's seafaring past is celebrated,
+                     and Lisbon, the capital, was a major hub for explorers setting out on maritime expeditions.
+                </p>
+            </section>
+        
+            <section id="gallery">
+                <h2 style="color: #747e19;">Port Wine</h2>
+                <p>
+                    Portugal is renowned for its production of Port wine, 
+                    a fortified wine from the Douro Valley. Port wine has a global reputation,
+                     and the picturesque vineyards along the Douro River are a
+                      popular destination for wine enthusiasts.
+                </p>
+            </section>
+        
+            <section id="contact">
+                <h2 style="color: #747e19;">Beautiful Beaches</h2>
+                <p>
+                    Portugal boasts stunning beaches along its coastline,
+                     especially in the Algarve region. These beaches attract tourists from around the world,
+                     offering not only sun and sand but also beautiful cliffs, caves, and clear waters.
+                </p>
+            </section>
+        </div>
+        <video id="video-background" autoplay muted loop playsinlin<h1></h1>e>
+            <source src="project pic/Portugal.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br><br>
+    <h1 class="title">"Legacy is not just what we leave behind, but the echoes of our impact that resonate through time, shaping the future with the essence of our journey."</h1>
+    <br><br>
+    <div>
+        <div>
+            <h1>Unique Music and Dance</h1>
+        </div>
+        <div class="music">
+            <div>
+                <video id="video-background" autoplay muted loop>
+                    <source src="project pic/Traditional dance from Minho, Portugal.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                
+                <p style="font-size: 20px;color: 	#470a0a;">
+                    Fado and folk music and dancing are Portugal’s most important 
+                    forms of musical expression. In fact, fado is on the UNESCO Intangible
+                     Cultural Heritage List. Translating to “destiny” or “fate,” it is characterized 
+                     by mournful tunes and lyrics, often about the sea, and is linked to the concept of
+                      saudade, a word connoting homesickness, longing, and nostalgia.
+                    Two main varieties exist. Lisbon’s style is more popular, and applauded by
+                     clapping, while Coimbra’s is more refined. To show appreciation, only a discreet
+                      clearing of the throat is appropriate. The importance of fado is confirmed by the
+                       fact that on the death in 1999 of Amália Rodrigues, the “Queen of Fado,” three days
+                        of national mourning were declared.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div>
+            <h1>Traditional Cuisine</h1>
+        </div>
+        <div class="food">
+            <div>
+                <img src="project pic/0000000.jpeg" alt="">
+                <h3 style="color: #ff3300;">Francesinha</h3>
+                <button><a href="https://www.foodandwine.com/essential-portuguese-foods-eat-portugal-6833070" style="color: inherit; text-decoration: none;">see more</a></button>
+            </div>
+            <div>
+                <img src="project pic/1235.webp" alt="">
+                <h3 style="color: #ff3300;">Sardinhas assadas</h3>
+                <button><a href="https://www.foodandwine.com/essential-portuguese-foods-eat-portugal-6833070" style="color: inherit; text-decoration: none;">see more</a></button>
+            </div>
+            <div>
+                <img src="project pic/1236.jpg" alt="">
+                <h3 style="color: #ff3300;">Pastel de nata</h3>
+                <button><a href="https://www.foodandwine.com/essential-portuguese-foods-eat-portugal-6833070" style="color: inherit; text-decoration: none;">see more</a></button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div>
+            <h1>Famous Locations</h1>
+        </div>
+        <div>
+            <div>
+                <article style="background-image: url('project pic/D.webp');">
+                    <div>
+                        <h2>Cabo da Roca</h2>
+                        <p style="background-color: #312f2fbb;">
+                            The westernmost point in continental Europe, Cabo da Roca exudes a wild,
+                             edge-of-the-Earth mystique. Waves crash against the rocks, tourists standing 
+                             atop sheer cliffs stare out at nothing but blue to the horizon,
+                             and a historic lighthouse guides boats sailing along the rugged coast.  
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/C.webp');">
+                    <div>
+                        <h2>Lagoa das Sete Cidades</h2>
+                        <p style="background-color: #312f2fbb;">
+                            The majesty of São Miguel never ceases to amaze. 
+                            Topping the list for many travelers visiting the volcanic main 
+                            island in the Azores archipelago are the famous and impossibly 
+                            photogenic twin crater lakes, Lagoa Azul ("blue lagoon") and Lagoa Verde ("green lagoon").  
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/B.webp');">
+                    <div>
+                        <h2>Pena Palace</h2>
+                        <p style="background-color: #312f2fbb;">
+                            One of the most beautiful places in Europe,
+                             Pena Palace is a hilltop Romanticist castle and the crown jewel of Sintra.
+                              Its candy-colored facade and sweeping terraces draw shutter-happy tourists from near and far.
+                             The stately interiors are filled with antiques, while the surrounding park provides tree-shaded pathways.
+                        </p>
+                    </div>
+                </article>
+            
+                <article style="background-image: url('project pic/A.webp');">
+                    <div>
+                        <h2>Jerónimos Monastery</h2>
+                        <p style="background-color: #312f2fbb;">
+                            One of the most-visited landmarks in Lisbon and a UNESCO World Heritage Site,
+                             the late Gothic Manueline-style Jerónimos Monastery stands tall as an enduring symbol
+                              of power dating back to the Age of Discovery.
+                             The block-long complex continues to impress with its magnificent maritime details, cloisters, and tombs.  
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <a href="" class="logo">WORLD CUP 2030</a>
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>HOME</h4>
+            <ul class="links">
+              <li><a href="">NEWS</a></li>
+              <li><a href="">HISTORY</a></li>
+              <li><a href="">HOST</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>HOST</h4>
+            <ul class="links">
+              <li><a href="">MOROCCO</a></li>
+              <li><a href="">SPAIN</a></li>
+              <li><a href="">PORTUGAL</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>HISTORY</h4>
+            <ul class="links">
+              <li><a href="">top scorer</a></li>
+              <li><a href="">most participate</a></li>
+              <li><a href="">country apparences</a></li>
+              <li><a href="">player win WC</a></li>
+              <li><a href="">the most country win</a></li>
+              <li><a href="">most tournament appeared</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe for a weekly dose of world cup 2030 news, updates.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
